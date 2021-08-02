@@ -1,0 +1,35 @@
+$primary-color: #f1c40f;
+$font-stack: Helvetica;
+
+.bg {
+  background-color: #1b0755;
+  height: 200px;
+  width: 100%;
+}
+
+.btn button {
+  font: $font-stack;
+  color: $primary-color;
+  position: fixed;
+  right: 920px;
+  top: 300px;
+}
+
+.header {
+  max-width: 900;
+  color: $primary-color;
+  position: fixed;
+  right: 920px;
+}
+
+.form-group1 {
+  position: fixed;
+  right: 1200px;
+  top: 250px;
+}
+
+.form-group2 {
+  position: fixed;
+  top: 250px;
+  right: 520px;
+}

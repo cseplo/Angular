@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card-header>Form</mat-card-header>
+  <p></p>
+
+  <mat-card-content>
+    <label for="title">Title: </label>
+    <input id="title" type="text" [formControl]="title" />
+
+    <label for="description">Description: </label>
+    <input id="description" type="text" [formControl]="description" />
+
+    <p>Title: {{ title.value }}</p>
+    <p>Description: {{ description.value }}</p>
+
+    <button (click)="updateValues()">Update Values</button>
+
+    <mat-card-actions> </mat-card-actions></mat-card-content
+></mat-card>

@@ -1,0 +1,44 @@
+<mat-card class="bg">
+  <mat-card-header class="header"><h2>Form</h2></mat-card-header>
+  <p></p>
+  <mat-card-content>
+    <form #tutorialform="ngForm" (ngSubmit)="onSubmit()">
+      <div class="form-group1">
+        <label for="title">Title</label>
+        <input
+          type="text"
+          id="title"
+          class="formcontrol"
+          ngModel
+          #title="ngModel"
+          name="title"
+          required
+        />
+        <span class="help" *ngIf="title.touched && description.value == 0"
+          >Gimme value!</span
+        >
+      </div>
+      <div class="form-group2">
+        <label for="description">Description</label>
+        <input
+          type="text"
+          id="description"
+          class="formcontrol"
+          ngModel
+          #description="ngModel"
+          name="description"
+          required
+        />
+        <span class="help" *ngIf="description.touched && description.value == 0"
+          >Gimme value!</span
+        >
+      </div>
+    </form>
+
+    <mat-card-actions>
+      <div class="btn">
+        <button mat-button color="primary" type="submit">Submit</button>
+      </div>
+    </mat-card-actions></mat-card-content
+  ></mat-card
+>
